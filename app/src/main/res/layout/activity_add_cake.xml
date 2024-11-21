@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f0f0"
+    android:gravity="center">
+
+    <!-- Nhập tên bánh -->
+    <EditText
+        android:id="@+id/cakeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Cake Name"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:textColor="#333333"
+        android:textColorHint="#888888" />
+
+    <!-- Nhập mô tả bánh -->
+    <EditText
+        android:id="@+id/cakeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Cake Description"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:layout_marginTop="8dp" />
+
+    <!-- Nhập giá bánh -->
+    <EditText
+        android:id="@+id/cakePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Cake Price"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        android:layout_marginTop="8dp" />
+
+    <!-- Chọn nhà phân phối -->
+    <Spinner
+        android:id="@+id/distributorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_borde"
+        android:padding="12dp" />
+
+    <!-- Chọn ảnh -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style" />
+
+    <!-- Hiển thị ảnh đã chọn -->
+    <ImageView
+        android:id="@+id/cakeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_upload"
+        android:contentDescription="Cake Image"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
+
+    <!-- Nút thêm bánh -->
+    <Button
+        android:id="@+id/addCakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Cake"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_style" />
+</LinearLayout>
